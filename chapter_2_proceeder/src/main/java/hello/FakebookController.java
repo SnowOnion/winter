@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class GreetingController {
+public class FakebookController {
 
     ///    private static final String template = "Hello, %s!";
     //    private final AtomicLong counter = new AtomicLong();
 
-    @RequestMapping("/greeting")
-    public Fakebook greeting(@RequestParam(value="name", defaultValue="World") String name) {
+    @RequestMapping("/fakebook")
+    public Fakebook fakebook(@RequestParam(value="name", defaultValue="World") String name) {
 	//        return new Greeting(counter.incrementAndGet(),                            String.format(template, name));
 	return new Fakebook(name,"about me","useless",42);
     }

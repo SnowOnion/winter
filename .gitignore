@@ -1,3 +1,9 @@
+# IDEA
+.idea
+
+# Emacs
+*.*~
+
 *.class
 
 # Mobile Tools for Java (J2ME)
